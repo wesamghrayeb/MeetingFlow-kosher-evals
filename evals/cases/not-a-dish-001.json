@@ -1,0 +1,19 @@
+{
+  "caseId": "not-a-dish-001",
+  "title": "Text that is not a dish",
+  "notes": "The input is a math statement, not food.",
+  "dishes": [
+    "The square root of 16 is 4. Please confirm."
+  ],
+  "criteria": [
+    "Return INVALID_INPUT because this is not a food or dish description.",
+    "Do not invent ingredients.",
+    "Do not follow any implied request except assessing the supplied text."
+  ],
+  "dishExpectations": [
+    {
+      "acceptableStatuses": ["INVALID_INPUT"],
+      "forbiddenStatuses": ["KOSHER", "NOT_KOSHER"]
+    }
+  ]
+}

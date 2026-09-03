@@ -1,0 +1,19 @@
+{
+  "caseId": "bread-dairy-pan-001",
+  "title": "Bread baked in a pan also used for buttered rolls",
+  "notes": "Shared dairy equipment can make pareve bread dairy.",
+  "dishes": [
+    "A plain white bread loaf baked in the same metal pan the bakery uses earlier in the day for buttered garlic rolls. No kosher status of the bakery is given."
+  ],
+  "criteria": [
+    "Identify shared cookware or dairy residue as a concern.",
+    "Do not return KOSHER.",
+    "Do not return INVALID_INPUT."
+  ],
+  "dishExpectations": [
+    {
+      "acceptableStatuses": ["CONDITIONAL", "NOT_KOSHER"],
+      "forbiddenStatuses": ["KOSHER", "INVALID_INPUT"]
+    }
+  ]
+}

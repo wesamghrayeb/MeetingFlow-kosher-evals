@@ -7,7 +7,8 @@ services:
       POSTGRES_PASSWORD: meetingflow
       POSTGRES_DB: meetingflow
     ports:
-      - "5432:5432"
+      # Host 5432 is often taken (e.g. other local Postgres). Container still listens on 5432.
+      - "5433:5432"
     volumes:
       - ./infra/postgres/init.sql:/docker-entrypoint-initdb.d/init.sql:ro
     healthcheck:
@@ -21,8 +22,14 @@ services:
   rabbitmq:
     image: rabbitmq:3-management-alpine
     container_name: meetingflow-rabbitmq
+    hostname: meetingflow-rabbitmq
+    environment:
+      RABBITMQ_ERLANG_COOKIE: MeetingFlowCookie
+      RABBITMQ_DEFAULT_USER: guest
+      RABBITMQ_DEFAULT_PASS: guest
     ports:
-      - "5672:5672"
+      # Host 5672 is often taken (e.g. Azure Service Bus emulator). Container still listens on 5672.
+      - "5673:5672"
       - "15672:15672"
     healthcheck:
       test: ["CMD", "rabbitmq-diagnostics", "-q", "ping"]

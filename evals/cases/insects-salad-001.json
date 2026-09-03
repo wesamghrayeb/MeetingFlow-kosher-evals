@@ -1,0 +1,19 @@
+{
+  "caseId": "insects-salad-001",
+  "title": "Leafy salad that may contain insects",
+  "notes": "Leafy vegetables often require inspection.",
+  "dishes": [
+    "A mixed leafy salad of romaine, parsley, and kale from a bulk bin, rinsed once in the sink, no insect inspection described."
+  ],
+  "criteria": [
+    "Mention insect inspection or the need to check leafy vegetables.",
+    "Do not return KOSHER without that caution.",
+    "Do not return INVALID_INPUT."
+  ],
+  "dishExpectations": [
+    {
+      "acceptableStatuses": ["CONDITIONAL"],
+      "forbiddenStatuses": ["KOSHER", "INVALID_INPUT"]
+    }
+  ]
+}

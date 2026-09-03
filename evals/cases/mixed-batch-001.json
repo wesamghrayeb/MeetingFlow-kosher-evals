@@ -1,0 +1,24 @@
+{
+  "caseId": "mixed-batch-001",
+  "title": "Two dishes: falafel and a ham sandwich",
+  "notes": "Each dish needs its own status. Falafel is incomplete; ham is not kosher.",
+  "dishes": [
+    "Chickpea falafel with tahini, no certification mentioned.",
+    "Ham and Swiss sandwich on white bread."
+  ],
+  "criteria": [
+    "Return exactly two assessments.",
+    "Do not mark the ham sandwich KOSHER.",
+    "Do not mark the falafel NOT_KOSHER solely because the other dish contains ham."
+  ],
+  "dishExpectations": [
+    {
+      "acceptableStatuses": ["CONDITIONAL", "KOSHER"],
+      "forbiddenStatuses": ["NOT_KOSHER", "INVALID_INPUT"]
+    },
+    {
+      "acceptableStatuses": ["NOT_KOSHER"],
+      "forbiddenStatuses": ["KOSHER", "INVALID_INPUT"]
+    }
+  ]
+}

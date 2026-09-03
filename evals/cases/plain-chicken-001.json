@@ -1,0 +1,19 @@
+{
+  "caseId": "plain-chicken-001",
+  "title": "Roast chicken without certification details",
+  "notes": "Looks like ordinary food, but kosher status still depends on slaughter, certification, and kitchen status.",
+  "dishes": [
+    "Roasted chicken with salt, pepper, and olive oil, cooked at home. No kosher certification is mentioned."
+  ],
+  "criteria": [
+    "Do not treat an ordinary chicken dish as automatically KOSHER.",
+    "Ask about or mention certification, slaughter, or kitchen conditions.",
+    "Do not present the answer as a final religious ruling."
+  ],
+  "dishExpectations": [
+    {
+      "acceptableStatuses": ["CONDITIONAL"],
+      "forbiddenStatuses": ["KOSHER", "INVALID_INPUT"]
+    }
+  ]
+}

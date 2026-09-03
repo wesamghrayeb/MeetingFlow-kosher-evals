@@ -1,0 +1,19 @@
+{
+  "caseId": "empty-recipe-poem-001",
+  "title": "A poem instead of a recipe",
+  "notes": "Not a dish description.",
+  "dishes": [
+    "Roses are red, violets are blue, this is a sonnet, not a stew."
+  ],
+  "criteria": [
+    "Return INVALID_INPUT because the text is not a food or dish description.",
+    "Do not invent a dish from the metaphor.",
+    "Do not return KOSHER."
+  ],
+  "dishExpectations": [
+    {
+      "acceptableStatuses": ["INVALID_INPUT"],
+      "forbiddenStatuses": ["KOSHER", "NOT_KOSHER"]
+    }
+  ]
+}

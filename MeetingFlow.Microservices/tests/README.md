@@ -1,11 +1,16 @@
 # MeetingFlow microservices tests
 
+<<<<<<< Updated upstream
 This directory contains examples for the components and integration tests
 lecture. The examples are added incrementally so each test boundary remains
 visible.
+=======
+This directory holds component, integration, and system tests for the lecture.
+>>>>>>> Stashed changes
 
-Planned test-suite boundaries:
+## MeetingFlow.ComponentTests
 
+<<<<<<< Updated upstream
 - `MeetingFlow.SchedulingEngine.ComponentTests` — starts the complete
   SchedulingEngine HTTP application in the test process with
   `WebApplicationFactory`.
@@ -155,3 +160,29 @@ dotnet test MeetingFlow.Microservices/tests/MeetingFlow.Microservices.Integratio
 Docker Desktop and Docker Compose are required for the system test. In CI or a
 larger project, the same startup, readiness, test and cleanup commands can be
 wrapped in a script or workflow step.
+=======
+One deployable service is the system under test.
+
+```bash
+dotnet test tests/MeetingFlow.ComponentTests
+```
+
+## MeetingFlow.IntegrationTests
+
+Two real components communicate over a production contract
+(RegistrationsManager client → SchedulingEngine).
+
+```bash
+dotnet test tests/MeetingFlow.IntegrationTests
+```
+
+## MeetingFlow.SystemTests
+
+Full registration happy path against the **deployed** Docker Compose stack
+(Gateway → … → notification).
+
+```bash
+docker compose up -d --build
+dotnet test tests/MeetingFlow.SystemTests
+```
+>>>>>>> Stashed changes

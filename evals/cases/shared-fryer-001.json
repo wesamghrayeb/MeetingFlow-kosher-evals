@@ -1,0 +1,19 @@
+{
+  "caseId": "shared-fryer-001",
+  "title": "French fries from a shared fryer",
+  "notes": "The same oil is used for calamari, so equipment sharing matters.",
+  "dishes": [
+    "Plain french fries fried in the same oil and fryer that the restaurant also uses for fried calamari."
+  ],
+  "criteria": [
+    "Identify the shared cookware or production line.",
+    "Do not treat the fries as KOSHER just because potatoes are plant-based.",
+    "Mention cross-contact with non-kosher seafood or the need to know how the fryer is used."
+  ],
+  "dishExpectations": [
+    {
+      "acceptableStatuses": ["CONDITIONAL", "NOT_KOSHER"],
+      "forbiddenStatuses": ["KOSHER", "INVALID_INPUT"]
+    }
+  ]
+}

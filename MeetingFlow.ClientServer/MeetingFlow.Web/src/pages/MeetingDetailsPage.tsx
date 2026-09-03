@@ -4,6 +4,7 @@ import { fetchMeeting } from "../api/meetingsApi";
 import SessionList from "../components/SessionList";
 import FeedbackList from "../components/FeedbackList";
 import type { Meeting } from "../types/models";
+import { formatAverageRating } from "../utils/averageRating";
 
 // Educational baseline:
 // This page uses the full Meeting entity with all nested navigation properties.
@@ -29,9 +30,7 @@ export default function MeetingDetailsPage() {
   const badgeClass =
     meeting.status === "Published" ? "badge-published" : meeting.status === "Draft" ? "badge-draft" : "badge-cancelled";
 
-  const avgRating = meeting.feedback?.length
-    ? (meeting.feedback.reduce((sum, f) => sum + f.rating, 0) / meeting.feedback.length).toFixed(1)
-    : "N/A";
+  const avgRating = formatAverageRating(meeting.feedback?.map((f) => f.rating));
 
   return (
     <>

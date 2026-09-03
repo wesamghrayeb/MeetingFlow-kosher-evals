@@ -1,0 +1,19 @@
+{
+  "caseId": "shrimp-cocktail-001",
+  "title": "Shrimp cocktail",
+  "notes": "Shellfish is a clear non-kosher ingredient.",
+  "dishes": [
+    "Shrimp cocktail with cocktail sauce, lemon, and parsley."
+  ],
+  "criteria": [
+    "Identify shrimp or shellfish as non-kosher.",
+    "Return NOT_KOSHER.",
+    "Do not present the answer as a final religious ruling."
+  ],
+  "dishExpectations": [
+    {
+      "acceptableStatuses": ["NOT_KOSHER"],
+      "forbiddenStatuses": ["KOSHER", "INVALID_INPUT"]
+    }
+  ]
+}

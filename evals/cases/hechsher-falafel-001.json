@@ -1,0 +1,19 @@
+{
+  "caseId": "hechsher-falafel-001",
+  "title": "Falafel with stated kosher certification",
+  "notes": "Ingredients are described as OU certified and the kitchen as pareve, but this is still not a rabbinic ruling.",
+  "dishes": [
+    "Falafel balls and tahini served in a pita. The cook states that every packaged ingredient has an OU hechsher and the kitchen is used only for pareve certified products."
+  ],
+  "criteria": [
+    "Do not return NOT_KOSHER or INVALID_INPUT.",
+    "KOSHER or CONDITIONAL are acceptable. If KOSHER, the explanation must still say this is not formal certification.",
+    "Do not present the answer as a final religious ruling."
+  ],
+  "dishExpectations": [
+    {
+      "acceptableStatuses": ["KOSHER", "CONDITIONAL"],
+      "forbiddenStatuses": ["NOT_KOSHER", "INVALID_INPUT"]
+    }
+  ]
+}

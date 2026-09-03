@@ -1,0 +1,19 @@
+{
+  "caseId": "wine-uncertified-001",
+  "title": "Uncertified table wine",
+  "notes": "Wine typically requires kosher supervision.",
+  "dishes": [
+    "A glass of French red table wine from a regular supermarket bottle with no kosher certification mentioned."
+  ],
+  "criteria": [
+    "Do not classify uncertified wine as KOSHER.",
+    "Mention certification or production supervision as a missing detail, or classify it as not kosher on that basis.",
+    "Do not present the answer as a final religious ruling."
+  ],
+  "dishExpectations": [
+    {
+      "acceptableStatuses": ["CONDITIONAL", "NOT_KOSHER"],
+      "forbiddenStatuses": ["KOSHER", "INVALID_INPUT"]
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "caseId": "blood-steak-001",
+  "title": "Rare steak described as still bloody",
+  "notes": "Blood in meat is a kosher concern even when the species could otherwise be kosher.",
+  "dishes": [
+    "A rare beef steak described as still bloody in the center, pan-seared, no kosher slaughter or salting process mentioned."
+  ],
+  "criteria": [
+    "Do not return KOSHER.",
+    "Mention blood, kosher slaughter, or the salting process, or classify the dish as not kosher on this description.",
+    "Do not present the answer as a final religious ruling."
+  ],
+  "dishExpectations": [
+    {
+      "acceptableStatuses": ["CONDITIONAL", "NOT_KOSHER"],
+      "forbiddenStatuses": ["KOSHER", "INVALID_INPUT"]
+    }
+  ]
+}

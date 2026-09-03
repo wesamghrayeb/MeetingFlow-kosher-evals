@@ -1,0 +1,19 @@
+{
+  "caseId": "fresh-apple-001",
+  "title": "Washed fresh apple",
+  "notes": "A simple plant food. Insect inspection can still make this conditional.",
+  "dishes": [
+    "A whole fresh apple, rinsed under water, served raw with the peel on."
+  ],
+  "criteria": [
+    "Treat this as a food description, not INVALID_INPUT.",
+    "Do not mark it NOT_KOSHER.",
+    "If returning KOSHER, keep the explanation modest and not a certification. CONDITIONAL is also acceptable if insect inspection is mentioned."
+  ],
+  "dishExpectations": [
+    {
+      "acceptableStatuses": ["KOSHER", "CONDITIONAL"],
+      "forbiddenStatuses": ["NOT_KOSHER", "INVALID_INPUT"]
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "caseId": "pork-bacon-001",
+  "title": "Bacon breakfast plate",
+  "notes": "Pork is a clear non-kosher ingredient.",
+  "dishes": [
+    "Breakfast plate of crispy bacon, scrambled eggs, and toast."
+  ],
+  "criteria": [
+    "Identify pork or bacon as a non-kosher ingredient.",
+    "Return NOT_KOSHER.",
+    "Do not present the answer as a final religious ruling."
+  ],
+  "dishExpectations": [
+    {
+      "acceptableStatuses": ["NOT_KOSHER"],
+      "forbiddenStatuses": ["KOSHER", "CONDITIONAL", "INVALID_INPUT"]
+    }
+  ]
+}

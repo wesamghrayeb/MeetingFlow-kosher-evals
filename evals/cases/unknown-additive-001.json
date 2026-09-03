@@ -1,0 +1,19 @@
+{
+  "caseId": "unknown-additive-001",
+  "title": "Candy with an unclear additive",
+  "notes": "E120 (carmine) is often not kosher; the label is incomplete.",
+  "dishes": [
+    "Strawberry gummy candy. Ingredient list includes sugar, glucose syrup, and additive E120. The rest of the label is unreadable."
+  ],
+  "criteria": [
+    "Treat the unknown or animal-derived additive as a reason for caution.",
+    "Do not classify the candy as KOSHER on this information.",
+    "Mention the missing or unclear ingredient information."
+  ],
+  "dishExpectations": [
+    {
+      "acceptableStatuses": ["CONDITIONAL", "NOT_KOSHER"],
+      "forbiddenStatuses": ["KOSHER", "INVALID_INPUT"]
+    }
+  ]
+}

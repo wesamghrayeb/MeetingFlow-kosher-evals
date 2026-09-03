@@ -1,0 +1,19 @@
+{
+  "caseId": "oyster-soup-001",
+  "title": "Oyster soup",
+  "notes": "Shellfish is non-kosher.",
+  "dishes": [
+    "Creamy oyster soup with butter, cream, and black pepper."
+  ],
+  "criteria": [
+    "Identify oysters as non-kosher seafood.",
+    "Return NOT_KOSHER even though dairy is also present; the shellfish is enough.",
+    "Do not present the answer as a final religious ruling."
+  ],
+  "dishExpectations": [
+    {
+      "acceptableStatuses": ["NOT_KOSHER"],
+      "forbiddenStatuses": ["KOSHER", "INVALID_INPUT"]
+    }
+  ]
+}

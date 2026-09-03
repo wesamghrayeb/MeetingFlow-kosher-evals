@@ -1,0 +1,19 @@
+{
+  "caseId": "vegetarian-lasagna-001",
+  "title": "Vegetarian lasagna with unspecified cheese",
+  "notes": "Cheese source and enzymes are unknown.",
+  "dishes": [
+    "Vegetarian lasagna made with tomato sauce, spinach, and cheese. The recipe does not say which cheese or whether it is kosher certified."
+  ],
+  "criteria": [
+    "Flag missing cheese source, enzymes, or certification.",
+    "Do not return KOSHER on this information.",
+    "Do not present the answer as a final religious ruling."
+  ],
+  "dishExpectations": [
+    {
+      "acceptableStatuses": ["CONDITIONAL"],
+      "forbiddenStatuses": ["KOSHER", "INVALID_INPUT"]
+    }
+  ]
+}

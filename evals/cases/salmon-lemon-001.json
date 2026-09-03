@@ -1,0 +1,19 @@
+{
+  "caseId": "salmon-lemon-001",
+  "title": "Baked salmon with lemon",
+  "notes": "Salmon has fins and scales, but preparation details are still missing.",
+  "dishes": [
+    "Baked Atlantic salmon fillet with lemon, garlic, and parsley, cooked in a home oven. No kosher certification or kitchen details are given."
+  ],
+  "criteria": [
+    "Do not treat salmon itself as a non-kosher species.",
+    "Do not return INVALID_INPUT.",
+    "CONDITIONAL is preferred because certification and cookware are missing; KOSHER is acceptable only with a modest, non-certifying explanation."
+  ],
+  "dishExpectations": [
+    {
+      "acceptableStatuses": ["CONDITIONAL", "KOSHER"],
+      "forbiddenStatuses": ["NOT_KOSHER", "INVALID_INPUT"]
+    }
+  ]
+}

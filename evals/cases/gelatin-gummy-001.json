@@ -1,0 +1,19 @@
+{
+  "caseId": "gelatin-gummy-001",
+  "title": "Gummy bears with unspecified gelatin",
+  "notes": "Gelatin source is unknown.",
+  "dishes": [
+    "Assorted gummy bears. The package lists gelatin but does not say whether it is bovine, porcine, or plant-based, and there is no kosher mark."
+  ],
+  "criteria": [
+    "Flag unspecified gelatin as a missing critical detail.",
+    "Do not return KOSHER.",
+    "Do not present the answer as a final religious ruling."
+  ],
+  "dishExpectations": [
+    {
+      "acceptableStatuses": ["CONDITIONAL", "NOT_KOSHER"],
+      "forbiddenStatuses": ["KOSHER", "INVALID_INPUT"]
+    }
+  ]
+}

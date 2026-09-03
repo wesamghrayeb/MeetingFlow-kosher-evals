@@ -1,0 +1,19 @@
+{
+  "caseId": "milk-meat-001",
+  "title": "Beef burger with dairy cheese",
+  "notes": "A clear meat-and-dairy combination.",
+  "dishes": [
+    "A grilled beef burger with melted cheddar cheese, buttered bun, and a side of milkshake."
+  ],
+  "criteria": [
+    "Identify the combination of meat and dairy.",
+    "Do not classify the dish as KOSHER.",
+    "Do not present the answer as a final religious ruling."
+  ],
+  "dishExpectations": [
+    {
+      "acceptableStatuses": ["NOT_KOSHER"],
+      "forbiddenStatuses": ["KOSHER", "INVALID_INPUT"]
+    }
+  ]
+}

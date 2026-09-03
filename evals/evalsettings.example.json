@@ -1,0 +1,6 @@
+{
+  "ApiKey": "<paste-key-here-or-set-KOSHER_EVAL_API_KEY>",
+  "Endpoint": "https://api.openai.com/v1",
+  "EvaluatedModel": "gpt-5-mini",
+  "JudgeModel": "gpt-5-mini"
+}
